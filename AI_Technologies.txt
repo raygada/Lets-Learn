@@ -17,34 +17,35 @@
 |--->Types of ML:
      |
      |-->Supervised Learning:
-         |-->It is machine learning model that uses labelled data(Structured data)              to map the specific feature to the label.
+         |-->It is machine learning model that uses labelled data(Structured data) to map the specific feature to the label.
          |-->Eg.Spam Detection.
-         |-->It uses algorithm as-->Linear Regression,Support vector              machines,Decision Trees.
+         |-->It uses algorithm as-->Linear Regression,Support vector machines,Decision Trees.
      |-->Unsupervised Learning:
-         |-->it is type of ML where the computer learns patterns from data that                 without labels.
-         |-->In this AI systems groups the unsorted information according to the              similarities and differences
-         |-->Unsupervised learning does not need supervision,or pre-existing                    datasets while training the data sets.
-         |-->It uses algorithms like Apriori,K-means Clustering,Artificial Neural              Networks
+         |-->it is type of ML where the computer learns patterns from data that without labels.
+         |-->In this AI systems groups the unsorted information according to the similarities and differences
+         |-->Unsupervised learning does not need supervision,or pre-existing datasets while training the data sets.
+         |-->It uses algorithms like Apriori,K-means Clustering,Artificial Neural Networks
     |--->Semi-Supervised Learning:
          |-->It the type which is mixed of supervised and Unsupervised learning.
          |-->It uses some labelled data and lots of Unlabelled data.
-         |-->Eg.Spam Detection--->Some emails are spam,AI detects more based on              patterns.
-         |-->It is better than Unsupervised learning becauses it has some labelled              data.
+         |-->Eg.Spam Detection--->Some emails are spam,AI detects more based on patterns.
+         |-->It is better than Unsupervised learning becauses it has some labelled data.
     |--->Reinforcement Learning:
          |-->It is the type of ML where AI learns from trials and errors.
          |-->It gets rewards for good actions and penalties for the bad actions.
          |-->Reinforcement learning from the human feedback.
-         |-->It trains software to make decisions to achieve the most optimal              results.
+         |-->It trains software to make decisions to achieve the most optimal results.
          |-->It Uses algorithm as Q-Learning,Model-based Value Estimation.
          |-->Eg.Self Driving Cars,Chess Game.
 
 ***************************************************************************
 Deep Learning:(Deep refers as to use of multiple layers)
---->Deep Learning is the type of ML that enables uses artifical neural networks to     learn from the data.
---->Artifical Neural Network are the inspired by the human brain, they can be used     to solve variety of the problems.
---->Neural Networks are made up of layers of interconnected nodes.and each node is     responsible for learning specific feature of the data.
+--->Deep Learning is the type of ML that enables uses artifical neural networks to learn from the data.
+--->Artifical Neural Network are the inspired by the human brain, they can be used to solve variety of the problems.
+--->Neural Networks are made up of layers of interconnected nodes.and each node is responsible for learning specific feature 
+    of the data.
 --->Deep Learning is the subset of the ML
---->Deep Learning automatically discovers the most relevant data to be used for     learning.
+--->Deep Learning automatically discovers the most relevant data to be used for learning.
 |
 |--->Types Of DL:
       |
@@ -52,9 +53,10 @@ Deep Learning:(Deep refers as to use of multiple layers)
            | 
            |-->It is Made up of the layers of neurons.
            |-->It is inspired by the human brain.
-           |-->It Consists of the interconnected nodes that process and transmit                the information
-           |-->It is the good method to solve the problems with nonlinear                relationship without knowing the exact function.
+           |-->It Consists of the interconnected nodes that process and transmit the information
+           |-->It is the good method to solve the problems with nonlinear relationship without knowing the exact function.
      |---->Convolutional Neural Networks (CNN) :
            |
-           |-->It is the type of the deep learning algorithm,particularly well-               suited for analyzing visual data like images and videos by                automatically learning and extracting features .
+           |-->It is the type of the deep learning algorithm,particularly well-suited for analyzing visual data like images 
+               and videos by automatically learning and extracting features .
            |-->It Uses filters and layers to detect patterns.
