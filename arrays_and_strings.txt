@@ -1,0 +1,53 @@
+*********** Arrays **********
+-->When the entire data is similar type we can take arrays for storing multiple values in single variable
+-->Every Arrays index are starting from the 0(Zero)
+--->Array Internally Pointer Used.
+|
+|__>i.e.  arr[0]=10  ,Let Us Assume Base address=100
+          ==(Base address+0 th index*4(Integer Data type size))
+          ==(100+0*4)
+          ==(100+0)
+          ==(100)...//At Base Place Add the 10 value .i.e.Starts Always Arrays From Zero th Index.
+---->With The Help Of The Index We can Modify,access the data of An array
+----->size() function is used to find arrays length.
+for Eg.
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+string s="Hello";
+int len=s.size();   //size() function is used to find out length of the array.
+cout<<"The Last element is :"<<s[len-1];///It will print 'o'
+return 0;
+}
+
+
+
+*************** Functions *************
+--->Function is the block of code which do something .It Will Executes when they called.
+---->Function Is Used To Modularized Code(similar code can be grouped into single function and when it is necessary we can call them.
+---->Function is used to improve readability.
+
+For Eg.of Function by Passing the value.
+#include<bits/stdc++.h>
+using namespace std;
+
+void printName(string name){ //Parameterized Function Takes name as argument
+cout<<"hey!!!" << name <<endl;
+}
+
+int main(){
+string name;
+cin>> name;
+printName(name);
+
+string name2;
+cin>> name2;
+printName(name2);
+cout<<name2;
+return 0;
+}
+
+-->From above we can see that after the passing the name to function it gives name to us.
+but internally it only gives to the copy of that name,after printing only name without function it gives the original name to us.because scope of variable.
+-->as local variable scope is only inside the function 
+-->And Global variable scope is available throught the program 

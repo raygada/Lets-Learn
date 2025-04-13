@@ -1,0 +1,91 @@
+Time Complexity:
+--->Whenever we write the code it will takes 2 sec,5sec,10 seconds to execute but it is not called as time complexity.
+---->Because time to execute the code it will depends on the machine or system architecture.
+Time Complexity: The rate at which time taken with respect to input size taken generally it is called as time complexity.
+---->Time Complexity is measured in Big O Notation i.e.O() -->inside them how many times taken is placed.ie.how many steps are you taken to execute the code competely it will be placed there.
+*****************************************************************************************
+for eg.                 |   In this Ex.We can see that,
+for(int i=0;i<5;i++){   |  First it will initialize value--->compare the value--print 
+cout<<i;                |the value-->increment them by 1--->compare the value.....
+}                       |i.e.As all the steps they take to execute it is 'time taken'
+*****************************************************************************************
+ But From above we cannot the measure the each steps manually for big program code.
+so,Note that:
+----> always computed the time complexity in worst case scenario.
+----> Avoid constants
+---->avoid lower values.
+
+In Above eg.We can say that, compare value-->print value and -->increment value it will takes 3 steps each iteration of the loop.
+i.e.as i<5 --->5*3==15 steps it will takes totally i.e.=== O(15)
+But We cannot enter the numeric value in terms of the Programatically.
+so assume there will be i<n --->(n*3)===O(n*3) It Is Our Time Complexity
+**There is always be 3 cases:
+1.Best Case.
+2.Average Case.
+3.Worst Case.
+
+Take an Example:
+Eg.
+if(value<=25 && value>=15) cout<<"Grade C";
+else if(value<=45 && value >25) cout<<"Grade B";
+else if(value>45 && value<60) cout<<"Grade A";
+else cout<<"Fail";
+// From above we says that the best case is at one condition is true it will executes only this line .none of them will be executed.
+So.Our Best Case is --->O(2)===as first checks the condition and print the result 
+i.e. Total 2 steps taken.
+
+//From above we can say that worst case is at how many maximum steps it will be taken..
+ie.from above eg.in value=10 then it will checks all conditions and then executes else part.
+===>>Worst case:Takes 4 steps:O(4)
+
+So Average case is the median of the Best and Worst cases.
+ie.O(2)+O(4)==O(6)/2==O(3)
+
+Note:
+Big Oh(O) --->Worst case,Upper Bound
+Theta(θ) --->Average case 
+Omega(Ω) ---->Worst Bound ,Lower Bound
+*****************************************
+Ex.2:
+for(int i=0;i<n;i++){
+for(int j=0;j<n;j++)
+{
+//Block of code     |
+//constant value    |_ _ >This Will be Eliminated in measuring the time Complexity.
+}
+}
+//from above we can say that i=0 to n-1
+//i=0-->j=0,1,2,3,4...n
+//i=1-->j=0,1,2,3,4...n
+.
+.
+.
+.
+.
+//i=n-1--->j=0,1,2,3,4...n
+//so in above we can say that ,j takes n times --->and i also takes n times..
+//please note that in this neglect the increment steps...because avoid lower values
+ie.n*n steps==n^2 i.e. Time Complexity==O(n^2).
+**************************************************
+Eg.3.
+for(i=0;i<n;i++){
+for(j=i;j<=n;j++){
+//code
+}
+}
+//From above Eg,we can say that:
+//i=0-->j=0    ....1
+//i=1-->j=0,1  ....2
+//i=2-->j=0,1,2 .....3
+.
+.
+.
+.
+//i=n-1--->j=0,1,2,3,4...n-1  ...n+1
+i.e. as equal to i th value the j th value executes that times.
+===n*(n+1)/2==(n^2/2)+(n/2)    ...//Neglet the lower values,constant
+===(n^2/2)
+i.e.Time Complexity==O(n^2)
+***************************************************
+
+

@@ -1,0 +1,45 @@
+**Download latest version of Node.js--->from official site
+
+Step 1: open vs-code
+**Install all Extension:
+1.vite
+2.es7 
+3.simple react snippets
+4.prettier code
+5.live server
+
+Step 2:open the folder and then run-->new terminal
+***check the node install or not
+--->node 
+-->if it gives version --->it installed successfully
+-->if gives error for execution policy related
+   |
+   |--->set -ExecutionPolicy RemoteSigned -Scope CurrentUser
+   | or
+   |-->goes to powershell app--->Run as Administrator --->set -ExecutionPolicy RemoteSigned -Scope CurrentUser-->
+       press Enter--->enter yes or y
+
+step 3: in the new terminal in vs code
+    *** 1.create new react-js project:
+        |
+        |-->npm create vite @latest first-project--->press Enter
+   
+    ***2.Select a Framework:--->select "React"
+
+    ***3.Select a Variant:--->select "JavaScript"
+
+step4:Go to the inside of the first-project file and :
+      |
+      |--->cd first-project
+         | 
+         |-->npm install
+Step 5: Run the program
+      |
+      |---->npm run dev
+
+  if program says to error of the react-router ,react-dom then you have to import them:
+      |
+      |--->npm install react react-dom react-router-dom
+
+
+

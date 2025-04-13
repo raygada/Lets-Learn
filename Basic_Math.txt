@@ -1,0 +1,78 @@
+****************************** Basic Math Concept ***********************
+*Digit:
+|
+|--Extraction of the digit
+******************************************************************
+For eg. N=7789 
+Que. How i gets each digit ??
+Ans: IF N=7789 % 10 Then It gives 9(remainder) --->It is unit place digit
+     IF N=7789 /10 Then It Gives 778.9 -->If It is converted to Integer datatype it gives the value as 778
+    If N=778 % 10  Then It Gives 8(remainder)-->It is Tenth Place digit
+    If N/10===>778/10-->77(In Integer)
+    If N % 10--->Then It Gives 7(remainder) --->It is Hundredth Place Digit
+    If again N/10==>Then We Gets 7
+    If 7 % 10==>7 --->It is Thousand Place Digit
+    If 7 /10==>Then It Gives 0(Integer Value)
+
+from above we can see that,
+Pseudo code:
+1.Take the 'n' as the Number from User
+2.while(n>0)Then
+     lastDigit=n % 10
+     n=n/10 
+*******************************************************************
+for eg. Count of Digits Of The Number:
+N=155 It should be give the result as the frequency(count) of digits in given Number ==> i.e.3
+
+Ans: If N=155 % 10 Then It Gives --> 5(remainder) --->1 digit
+     if N/10  then it gives ---->15 
+     if n=15 % 10 then it gives ---->5(remainder)---->2 digit
+     if n/10 then it gives ---->1
+     if n % 10 then it gives ---> 1(remainder)--->3 digit
+Pseudocode:
+1.Take n as Number from the user
+2.Take Count=0 Variable for Counting the digits of the given No.
+3.while(n>0)Then
+      lastDigit = n % 10
+      count=count+1
+      n = n / 10
+4.Print count        //it Gives the count of the digits of the given Number
+***********************************************************************
+for eg.(Reverse Of Given No.):
+N=1598 It should be give the result as the ---> 8951
+
+Ans: 
+take reverse = 0 
+if n=1598 % 10 Then It Gives ----> 8(remainder)
+     reverse=(reverse* 10)+remainder--->(0*10)+8==>0+8===>8   i.e.reverse=8 Now.
+if n=n/10==>Then We get,==>159
+if n=n %10==>159 % 10===>9(remainder)
+     reverse=(8*10)+9==>80+9==>89  ie.reverse=89 Now.
+if n=n/10==>Then We get,==>15
+if n=n %10==>15 % 10===>5(remainder)
+     reverse=(89*10)+5==>890+5==>895  ie.reverse=895 Now.
+if n=n/10==>Then We get,==>1
+if n=n %10==>1 % 10===>1(remainder)
+     reverse=(895*10)+1==>8950+1==>8951  ie.reverse=8951 Now.
+***********************************************************************
+for eg.(Palindrome Of Given No.):
+N=4334
+--->This is the palindrome No.
+--->Palindrome Means the reverse of the given no.and the given No is same .
+
+Ans: 
+take reverse = 0 
+if n=4334 % 10 Then It Gives ----> 4(remainder)
+     reverse=(reverse* 10)+remainder--->(0*10)+4==>0+4===>4  i.e.reverse=4 Now.
+if n=n/10==>Then We get,==>433
+if n=n %10==>433 % 10===>3(remainder)
+     reverse=(4*10)+3==>40+3==>43 ie.reverse=43 Now.
+if n=n/10==>Then We get,==>43
+if n=n %10==>43 % 10===>3(remainder)
+     reverse=(43*10)+3==>430+3==>433  ie.reverse=433 Now.
+if n=n/10==>Then We get,==>4
+if n=n %10==>1 % 110===>4(remainder)
+     reverse=(433*10)+4==>4330+4==>4334  ie.reverse=4334 Now.
+
+Now Check the Given no==reverse--->The No.is Said to as the Palindrome Number.
+*************************************************************************
